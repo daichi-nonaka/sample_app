@@ -2,8 +2,8 @@ source 'https://rubygems.org'
 
 
 gem 'rails'
-gem 'bootstrap-sass', '3.3.1'
-gem 'devise', '3.4.1'
+gem 'bootstrap-sass'
+gem 'devise'
 
 group :development do
   gem 'sqlite3'
