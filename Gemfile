@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gem 'rails'
 gem 'bootstrap-sass'
 gem 'devise'
+gem 'faker'
 
 group :development do
   gem 'sqlite3'
