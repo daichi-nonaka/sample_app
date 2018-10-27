@@ -1,6 +1,5 @@
 module UsersHelper
     
-  # 該当ユーザーのメールアドレスに対応するGravatarの画像URLを返す
   def gravatar_for(user, options = { size: 50 })
     gravatar_id = Digest::MD5::hexdigest(user.email.downcase)
     size = options[:size]
