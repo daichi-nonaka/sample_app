@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   before_action :authenticate_user!, :except=>[:show]
+<<<<<<< HEAD
   before_action :admin_user,     only: :destroy
   
   def destroy
@@ -12,6 +13,13 @@ class UsersController < ApplicationController
     @users = User.paginate(page: params[:page])
   end
 
+=======
+  
+  def index
+    @users = User.all
+  end
+  
+>>>>>>> fadab1e8e4fc52db75c637b3b03b82a74dd076b4
   def show
     @user = User.find(params[:id])
     @microposts = @user.microposts.paginate(page: params[:page])

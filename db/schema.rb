@@ -10,6 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2018_10_28_064207) do
 
   create_table "microposts", force: :cascade do |t|
@@ -19,6 +20,9 @@ ActiveRecord::Schema.define(version: 2018_10_28_064207) do
     t.datetime "updated_at", null: false
     t.index ["user_id", "created_at"], name: "index_microposts_on_user_id_and_created_at"
   end
+=======
+ActiveRecord::Schema.define(version: 2018_10_19_122357) do
+>>>>>>> fadab1e8e4fc52db75c637b3b03b82a74dd076b4
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -34,7 +38,10 @@ ActiveRecord::Schema.define(version: 2018_10_28_064207) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string "name"
+<<<<<<< HEAD
     t.boolean "admin", default: false
+=======
+>>>>>>> fadab1e8e4fc52db75c637b3b03b82a74dd076b4
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
