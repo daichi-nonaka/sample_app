@@ -315,6 +315,7 @@ module Warden
     private
 
     def _perform_authentication(*args)
+       binding.pry
       scope, opts = _retrieve_scope_and_opts(args)
       user = nil
 

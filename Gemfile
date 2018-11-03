@@ -10,6 +10,9 @@ gem 'will_paginate-bootstrap'
 
 group :development do
   gem 'sqlite3'
+  gem 'pry-rails'
+  gem 'pry-byebug'
+  gem 'pry-doc'
 end
 
 gem 'sass-rails'
