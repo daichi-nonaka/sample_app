@@ -142,6 +142,35 @@ aside {
   }
 }
 
+.stats {
+  overflow: auto;
+  a {
+    float: left;
+    padding: 0 10px;
+    border-left: 1px solid $gray-lighter;
+    color: gray;
+    &:first-child {
+      padding-left: 0;
+      border: 0;
+    }
+    &:hover {
+      text-decoration: none;
+      color: blue;
+    }
+  }
+  strong {
+    display: block;
+  }
+}
+
+.user_avatars {
+  overflow: auto;
+  margin-top: 10px;
+  .gravatar {
+    margin: 1px 1px;
+  }
+}
+
 .gravatar {
   float: left;
   margin-right: 10px;
@@ -188,7 +217,6 @@ input {
       border-bottom: 1px solid $gray-lighter;
     }
   }
-<<<<<<< HEAD
 }
 
 /* microposts */
@@ -217,6 +245,4 @@ aside {
     height: 100px;
     margin-bottom: 5px;
   }
-=======
->>>>>>> fadab1e8e4fc52db75c637b3b03b82a74dd076b4
 }
