@@ -3,12 +3,8 @@ SampleApp::Application.routes.draw do
     :registrations => "registrations",
     :sessions => "sessions"
   }
-<<<<<<< HEAD
   resources :users, only: [:show, :index, :destroy]
   resources :microposts, only: [:create, :destroy]
-=======
-  resources :users, only: [:show, :index]
->>>>>>> fadab1e8e4fc52db75c637b3b03b82a74dd076b4
   root  'static_pages#home'
   match '/help',    to: 'static_pages#help',    via: 'get'
   match '/about',   to: 'static_pages#about',   via: 'get'

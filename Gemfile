@@ -5,11 +5,8 @@ gem 'rails'
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'faker'
-<<<<<<< HEAD
 gem 'will_paginate'
 gem 'will_paginate-bootstrap'
-=======
->>>>>>> fadab1e8e4fc52db75c637b3b03b82a74dd076b4
 
 group :development do
   gem 'sqlite3'
